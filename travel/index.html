@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pogodowy Planer Podróży</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Pogodowy Planer Podróży</h1>
+
+  <div id="container">
+    <div id="map"></div>
+
+    <div id="panel">
+      <h2>Aktualna pogoda</h2>
+      <p id="weather">Kliknij na mapę</p>
+
+      <button id="addBtn" disabled>Dodaj do celów</button>
+
+      <h2>Moje cele podróży</h2>
+      <ul id="destinations"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
