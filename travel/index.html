@@ -1,32 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <title>Pogodowy Planer Podróży</title>
-
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet/dist/leaflet.css"
-  />
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <h1>Pogodowy Planer Podróży</h1>
-
-  <div id="container">
-    <div id="map"></div>
-
-    <div id="panel">
-      <h2>Aktualna pogoda</h2>
-      <p id="weather">Kliknij na mapę</p>
-
-      <button id="addBtn" disabled>Dodaj do celów</button>
-
-      <h2>Moje cele podróży</h2>
-      <ul id="destinations"></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pogodowy Planer Podróży</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <h1>Pogodowy Planer Podróży</h1>
+    <div id="container">
+      <div id="map" aria-label="Mapa do wyboru celu podróży"></div>
+      <div id="panel">
+        <h2>Aktualna pogoda</h2>
+        <p id="weather" aria-live="polite">Kliknij na mapę, aby sprawdzić pogodę.</p>
+        <button id="addBtn" type="button" disabled>Dodaj do celów</button>
+        <h2>Moje cele podróży</h2>
+        <ul id="destinations"></ul>
+      </div>
     </div>
-  </div>
-
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
